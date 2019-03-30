@@ -5,7 +5,7 @@ let resultsContainer = document.getElementById('search-results');
 const empresasBtn = document.getElementById('empresas-view');
 const queryBtn = document.getElementById('query-btn');
 const filterBtn = document.getElementById('empresas-button');
-const mensaje = document.getElementById('mensaje');
+const mensajeBtn = document.getElementById('mensaje');
 /* functions */
 const inicializar = () => {
 	myForm = document.getElementById('form');
@@ -74,10 +74,10 @@ queryBtn.addEventListener('click', () => {
 	document.getElementById('main-view').classList.add('none');
 	displayBlock('form-view', 'query-btn');
 	inicializar();
-	document.getElementById('mensaje').classList.remove('none');
 });
-mensaje.addEventListener('click', () => {
+mensajeBtn.addEventListener('click', () => {
 	document.getElementById('form-view').classList.add('none');
+	inicializar();
 	mostraDataBase();
 })
 // window.onload = inicializar;
