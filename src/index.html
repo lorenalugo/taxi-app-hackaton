@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BETTA</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header id="header" class="">
+	<nav class="topnav purple-bg">
+  <a href="#home" class="active">Logo</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+	</nav>
+	</header><!-- /header -->
+	<section id="main-view" class="flex">
+		<button id="empresas-button" class="btn block" type="button">Empresas</button>
+		<button id="query-btn" class="btn block" type="button">Conductores</button>
+	</section>
+	<section id="empresas-view" class="none">
+		<button data-empresa="Uber" type="button">UBER</button>
+		<button data-empresa="Cabifi" type="button">CABIFY</button>
+		<button data-empresa="Beat" type="button">BEAT</button>
+		<button data-empresa="Easy" type="button">EASY TAXI</button>
+	</section>
+	<section id="form-view" class="none">
+		<form id="form" action="#" method="get" accept-charset="utf-8">
+			<input id="inputEmpresa" type="text" name="inputEmpresa" value="" placeholder="Empresa" />
+			<input id="inputConductor" type="text" name="inputConductor" value="" placeholder="Conductor" />
+			<input id="inputFecha" type="text" name="inputFecha" value="" placeholder="Fecha" />
+			<input id="inputPlaca" type="text" name="inputPlaca" value="" placeholder="Placa" />
+			<textarea id="inputDesc" name="descripcion" value="" max="1000" placeholder="Descripcion"></textarea>
+			<button type="submit">Submit</button>
+		</form>
+	</section>
+	<section id="query-view" class="none">
+		<form action="#" method="get" accept-charset="utf-8">
+			<input type="text" name="inputConductor" value="" placeholder="Ingrese el nombre del conductor" />
+		</form>
+	</section>
+	<section id="search-results" class=""></section>
+	<footer class="purple-bg">
+	<p>@2019, Creado por Pequeñas Gigantes</p>	
+	</footer>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  const config = {
+    apiKey: "AIzaSyCyGEFNsa3tdjepmFh5S6yhM0-FCePDjF0",
+    authDomain: "taxi-app-db.firebaseapp.com",
+    databaseURL: "https://taxi-app-db.firebaseio.com",
+    projectId: "taxi-app-db",
+    storageBucket: "taxi-app-db.appspot.com",
+    messagingSenderId: "387581643214"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="conection.js"></script>
+</body>
+</html>

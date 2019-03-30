@@ -1,0 +1,139 @@
+/* General styles */
+body {
+	margin: 0;
+}
+
+footer {
+  height: 25vh;
+  width: 100%;
+  color:#fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+footer p {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+#main-view {
+  height: 40vh;
+}
+
+#search-results{
+  height: 80vh;
+}
+.logo {
+  height: 25px;
+  width: auto;
+}
+.block {
+  display: block;
+}
+
+.auto {
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+}
+.border-box {
+  box-sizing: border-box;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+}
+.purple-bg, .topnav, .topnav a.icon, .active, .topnav a.icon {
+	background-color: #8a15b2;
+}
+.blue-bg, .btn {
+	background-color: #7593b7;
+}
+.grey-color, .row {
+	color: #58595b;
+}
+.light-purple-color {
+  background-color: rgb(138,21,178, 0.5);
+}
+.btn {
+	float: right;
+	padding: 13px 35px 12px;
+	border-radius: 5px;
+  border: none;
+	color: #fff;
+  margin: 10px;
+  width: 200px;
+}
+.col-xs-12 {
+  float: left;
+  width: 100%;
+}
+.col-xs-6 {
+  float: left;
+  width: 50%;
+}
+.row {
+  width: 90%;
+  height: 300px;
+  box-sizing: border-box;
+  border: 1px solid #8a15b2;
+  padding: 10px;
+  margin: 10px auto;
+}
+.none {
+  display: none;
+}
+/* navbar */
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+/* form */
+input{
+  padding: 14px 16px;
+  
+}
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  color: white;
+}

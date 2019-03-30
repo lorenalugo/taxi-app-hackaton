@@ -1,0 +1,32 @@
+{
+	"data": {
+	"1": {
+		"Empresa": "Uber",
+		"Conductor": "Francisco José Castillo Pérez",
+		"Placa": "ABC123",
+		"Fecha": "20/03/19",
+		"Descripcion": "Me hacía preguntas personales, por más que me mostré molesta, no le importó"
+	},
+	"2": {
+		"Empresa": "Cabifi",
+		"Conductor": "Carlos Antonio Bernardillo Alvarez",
+		"Placa": "",
+		"Fecha": "14/01/19",
+		"Descripcion": "Intentó conectarme, comenzó a escribirme por whatsapp"
+	},
+	"3": {
+		"Empresa": "Uber",
+		"Conductor": "Matías Alfonso Panebra Portillo",
+		"Placa": "DFG345",
+		"Fecha": "03/03/19",
+		"Descripcion": "Me miraba constantemente por el espejo, tenía miedo"
+	},
+	"4": {
+		"Empresa": "Cabifi",
+		"Conductor": "Alonso Fabián Marín Méndez",
+		"Placa": "",
+		"Fecha": "16/02/19", 
+		"Descripcion": "Se fue por otra ruta, le dije que para dónde iba y no me respondía, dió muchas vueltas para llevarme a mi destino, creí que me robaría, violaría"
+	}
+}
+}
