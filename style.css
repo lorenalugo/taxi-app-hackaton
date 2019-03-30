@@ -107,9 +107,18 @@ footer p {
   position: relative;
 }
 /* form */
+form {
+  width: 90%;
+  margin: auto;
+}
 input{
   padding: 14px 16px;
-  
+  width: 300px;
+}
+
+textarea {
+  height: 200px;
+  width: 300px;
 }
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {

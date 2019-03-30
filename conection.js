@@ -5,12 +5,12 @@ let resultsContainer = document.getElementById('search-results');
 const empresasBtn = document.getElementById('empresas-view');
 const queryBtn = document.getElementById('query-btn');
 const filterBtn = document.getElementById('empresas-button');
+const mensaje = document.getElementById('mensaje');
 /* functions */
 const inicializar = () => {
 	myForm = document.getElementById('form');
 	myForm.addEventListener('submit', enviarData, false);
 	refData = firebase.database().ref().child('data');
-	mostraDataBase();
 }
 
 const enviarData = (e) => {
@@ -63,9 +63,21 @@ filterBtn.addEventListener('click', (e) => {
 	filterBtn.disabled = true;
 	filterBtn.innerText = "Cargando...";
 	inicializar();
+	mostraDataBase();
 	displayBlock('empresas-view', 'main-view');
 });
 empresasBtn.addEventListener('click', (e) => {
 	displayBlock('search-results', 'empresas-view');
 });
+
+queryBtn.addEventListener('click', () => {
+	document.getElementById('main-view').classList.add('none');
+	displayBlock('form-view', 'query-btn');
+	inicializar();
+	document.getElementById('mensaje').classList.remove('none');
+});
+mensaje.addEventListener('click', () => {
+	document.getElementById('form-view').classList.add('none');
+	mostraDataBase();
+})
 // window.onload = inicializar;
