@@ -1,4 +1,6 @@
-# taxi-app-hackaton
+# BETTA: Behind the taxi app
+
+Aplicación realizada para el hackaton de Laboratoria.la (Hackeando la Desigualdad)
 
 Es una aplicación que autoalimentada por usuarixs de taxis de aplicación, la cual provee una base de datos de los choferes de estas compañías que han sido causantes de acoso, discriminación, intimidación, etc. a las usuarias, durante el la prestación de servicios.
 
